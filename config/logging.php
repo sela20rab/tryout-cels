@@ -12,23 +12,16 @@ return [
     | Default Log Channel
     |--------------------------------------------------------------------------
     |
-    | This option defines the default log channel that gets used when writing
-    | messages to the logs. The name specified in this option should match
-    | one of the channels defined in the "channels" configuration array.
+    | Untuk Vercel gunakan stderr karena filesystem Vercel bersifat read-only.
     |
     */
 
-    'default' => env('LOG_CHANNEL', 'stderr'),
+    'default' => 'stderr',
 
     /*
     |--------------------------------------------------------------------------
-    | Deprecations Log Channel
+    | Deprecations
     |--------------------------------------------------------------------------
-    |
-    | This option controls the log channel that should be used to log warnings
-    | regarding deprecated PHP and library features. This allows you to get
-    | your application ready for upcoming major versions of dependencies.
-    |
     */
 
     'deprecations' => [
@@ -40,23 +33,34 @@ return [
     |--------------------------------------------------------------------------
     | Log Channels
     |--------------------------------------------------------------------------
-    |
-    | Here you may configure the log channels for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
-    |
-    | Available Drivers: "single", "daily", "slack", "syslog",
-    |                    "errorlog", "monolog",
-    |                    "custom", "stack"
-    |
     */
 
     'channels' => [
+
+        /*
+        |--------------------------------------------------------------------------
+        | Stack
+        |--------------------------------------------------------------------------
+        |
+        | Jangan gunakan "single" di Vercel karena single menulis ke
+        | storage/logs/laravel.log.
+        |
+        */
+
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['single'],
+            'channels' => ['stderr'],
             'ignore_exceptions' => false,
         ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Single
+        |--------------------------------------------------------------------------
+        |
+        | Tetap disediakan untuk development/local.
+        |
+        */
 
         'single' => [
             'driver' => 'single',
@@ -65,6 +69,12 @@ return [
             'replace_placeholders' => true,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Daily
+        |--------------------------------------------------------------------------
+        */
+
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
@@ -72,6 +82,12 @@ return [
             'days' => 14,
             'replace_placeholders' => true,
         ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Slack
+        |--------------------------------------------------------------------------
+        */
 
         'slack' => [
             'driver' => 'slack',
@@ -82,28 +98,69 @@ return [
             'replace_placeholders' => true,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Papertrail
+        |--------------------------------------------------------------------------
+        */
+
         'papertrail' => [
             'driver' => 'monolog',
             'level' => env('LOG_LEVEL', 'debug'),
-            'handler' => env('LOG_PAPERTRAIL_HANDLER', SyslogUdpHandler::class),
+
+            'handler' => env(
+                'LOG_PAPERTRAIL_HANDLER',
+                SyslogUdpHandler::class
+            ),
+
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
+
+                'connectionString' =>
+                    'tls://' .
+                    env('PAPERTRAIL_URL') .
+                    ':' .
+                    env('PAPERTRAIL_PORT'),
             ],
-            'processors' => [PsrLogMessageProcessor::class],
+
+            'processors' => [
+                PsrLogMessageProcessor::class,
+            ],
         ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | STDERR
+        |--------------------------------------------------------------------------
+        |
+        | INI yang digunakan Vercel.
+        |
+        */
 
         'stderr' => [
             'driver' => 'monolog',
+
             'level' => env('LOG_LEVEL', 'debug'),
+
             'handler' => StreamHandler::class,
+
             'formatter' => env('LOG_STDERR_FORMATTER'),
+
             'with' => [
                 'stream' => 'php://stderr',
             ],
-            'processors' => [PsrLogMessageProcessor::class],
+
+            'processors' => [
+                PsrLogMessageProcessor::class,
+            ],
         ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Syslog
+        |--------------------------------------------------------------------------
+        */
 
         'syslog' => [
             'driver' => 'syslog',
@@ -112,20 +169,42 @@ return [
             'replace_placeholders' => true,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Error Log
+        |--------------------------------------------------------------------------
+        */
+
         'errorlog' => [
             'driver' => 'errorlog',
             'level' => env('LOG_LEVEL', 'debug'),
             'replace_placeholders' => true,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Null
+        |--------------------------------------------------------------------------
+        */
+
         'null' => [
             'driver' => 'monolog',
             'handler' => NullHandler::class,
         ],
 
+        /*
+        |--------------------------------------------------------------------------
+        | Emergency
+        |--------------------------------------------------------------------------
+        |
+        | /tmp dapat ditulis di environment serverless seperti Vercel.
+        |
+        */
+
         'emergency' => [
-            'path' => storage_path('logs/laravel.log'),
+            'path' => '/tmp/laravel-emergency.log',
         ],
+
     ],
 
 ];
