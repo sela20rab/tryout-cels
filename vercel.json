@@ -14,31 +14,8 @@
             "dest": "/public/build/$1"
         },
         {
-            "src": "/(.*\\.(?:css|js|png|jpg|jpeg|gif|svg|ico|ttf|woff|woff2|eot|otf|webp|avif))$",
-            "dest": "/public/$1"
-        },
-        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
-    ],
-
-    "env": {
-        "APP_ENV": "production",
-        "APP_DEBUG": "false",
-        "APP_URL": "https://tryout-cels-kp26olkmd-selapebriana20-4991s-projects.vercel.app",
-
-        "LOG_CHANNEL": "stderr",
-        "LOG_LEVEL": "error",
-
-        "CACHE_DRIVER": "array",
-        "SESSION_DRIVER": "cookie",
-
-        "APP_CONFIG_CACHE": "/tmp/config.php",
-        "APP_EVENTS_CACHE": "/tmp/events.php",
-        "APP_PACKAGES_CACHE": "/tmp/packages.php",
-        "APP_ROUTES_CACHE": "/tmp/routes.php",
-        "APP_SERVICES_CACHE": "/tmp/services.php",
-        "VIEW_COMPILED_PATH": "/tmp/views"
-    }
+    ]
 }
