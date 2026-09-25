@@ -6,23 +6,36 @@ $app = new Illuminate\Foundation\Application(
 
 /*
 |--------------------------------------------------------------------------
-| Vercel / Serverless Storage
+| Vercel Serverless Environment
 |--------------------------------------------------------------------------
-|
-| Vercel memiliki filesystem read-only.
-| Hanya /tmp yang dapat digunakan untuk file sementara.
-|
 */
 
-if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
+if (
+    isset($_ENV['VERCEL']) ||
+    isset($_SERVER['VERCEL'])
+) {
+    /*
+    |--------------------------------------------------------------------------
+    | Laravel Storage
+    |--------------------------------------------------------------------------
+    */
+
     $app->useStoragePath('/tmp/storage');
+
+    /*
+    |--------------------------------------------------------------------------
+    | Create writable directories
+    |--------------------------------------------------------------------------
+    */
 
     $directories = [
         '/tmp/storage',
+        '/tmp/storage/app',
         '/tmp/storage/framework',
         '/tmp/storage/framework/cache',
         '/tmp/storage/framework/cache/data',
         '/tmp/storage/framework/sessions',
+        '/tmp/storage/framework/testing',
         '/tmp/storage/framework/views',
         '/tmp/storage/logs',
         '/tmp/views',
