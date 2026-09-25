@@ -12,7 +12,8 @@ return [
     | Default Log Channel
     |--------------------------------------------------------------------------
     |
-    | Untuk Vercel gunakan stderr karena filesystem Vercel bersifat read-only.
+    | Vercel menggunakan filesystem read-only.
+    | Oleh karena itu logger utama diarahkan langsung ke STDERR.
     |
     */
 
@@ -25,7 +26,7 @@ return [
     */
 
     'deprecations' => [
-        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
+        'channel' => 'null',
         'trace' => false,
     ],
 
@@ -42,14 +43,16 @@ return [
         | Stack
         |--------------------------------------------------------------------------
         |
-        | Jangan gunakan "single" di Vercel karena single menulis ke
+        | Stack juga diarahkan ke stderr agar tidak pernah menggunakan
         | storage/logs/laravel.log.
         |
         */
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['stderr'],
+            'channels' => [
+                'stderr',
+            ],
             'ignore_exceptions' => false,
         ],
 
@@ -58,7 +61,7 @@ return [
         | Single
         |--------------------------------------------------------------------------
         |
-        | Tetap disediakan untuk development/local.
+        | Digunakan untuk development lokal jika diperlukan.
         |
         */
 
@@ -134,14 +137,14 @@ return [
         | STDERR
         |--------------------------------------------------------------------------
         |
-        | INI yang digunakan Vercel.
+        | Logger utama untuk Vercel.
         |
         */
 
         'stderr' => [
             'driver' => 'monolog',
 
-            'level' => env('LOG_LEVEL', 'debug'),
+            'level' => env('LOG_LEVEL', 'error'),
 
             'handler' => StreamHandler::class,
 
@@ -197,7 +200,8 @@ return [
         | Emergency
         |--------------------------------------------------------------------------
         |
-        | /tmp dapat ditulis di environment serverless seperti Vercel.
+        | Jika logger utama gagal, emergency logger menggunakan /tmp,
+        | yang writable pada Vercel.
         |
         */
 
