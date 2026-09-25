@@ -2,7 +2,7 @@
 
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
-use Monolog\Processor\PsrLogMessageProcessor;
+use Monolog\Formatter\LineFormatter;
 
 return [
 
@@ -12,16 +12,16 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'default' => 'stderr',
+    'default' => env('LOG_CHANNEL', 'stderr'),
 
     /*
     |--------------------------------------------------------------------------
-    | Deprecations
+    | Deprecations Log Channel
     |--------------------------------------------------------------------------
     */
 
     'deprecations' => [
-        'channel' => 'null',
+        'channel' => env('LOG_DEPRECATIONS_CHANNEL', 'null'),
         'trace' => false,
     ],
 
@@ -41,33 +41,69 @@ return [
 
         'stack' => [
             'driver' => 'stack',
-            'channels' => [
-                'stderr',
-            ],
+            'channels' => ['stderr'],
             'ignore_exceptions' => false,
+        ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Single
+        |--------------------------------------------------------------------------
+        */
+
+        'single' => [
+            'driver' => 'single',
+            'path' => 'php://stderr',
+            'level' => env('LOG_LEVEL', 'debug'),
+        ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Daily
+        |--------------------------------------------------------------------------
+        */
+
+        'daily' => [
+            'driver' => 'daily',
+            'path' => 'php://stderr',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'days' => 14,
+            'replace_placeholders' => true,
         ],
 
         /*
         |--------------------------------------------------------------------------
         | STDERR
         |--------------------------------------------------------------------------
-        |
-        | Digunakan khusus untuk Vercel / Serverless.
-        | Tidak menulis file ke storage.
-        |
         */
 
         'stderr' => [
             'driver' => 'monolog',
-            'level' => env('LOG_LEVEL', 'error'),
+            'level' => env('LOG_LEVEL', 'debug'),
             'handler' => StreamHandler::class,
-            'formatter' => env('LOG_STDERR_FORMATTER'),
             'with' => [
                 'stream' => 'php://stderr',
             ],
-            'processors' => [
-                PsrLogMessageProcessor::class,
+            'formatter' => LineFormatter::class,
+            'formatter_with' => [
+                'format' => "[%datetime%] %channel%.%level_name%: %message% %context% %extra%\n",
+                'dateFormat' => 'Y-m-d H:i:s',
+                'allowInlineLineBreaks' => true,
+                'ignoreEmptyContextAndExtra' => true,
             ],
+        ],
+
+        /*
+        |--------------------------------------------------------------------------
+        | Syslog
+        |--------------------------------------------------------------------------
+        */
+
+        'syslog' => [
+            'driver' => 'syslog',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'facility' => LOG_USER,
+            'replace_placeholders' => true,
         ],
 
         /*
@@ -78,7 +114,7 @@ return [
 
         'errorlog' => [
             'driver' => 'errorlog',
-            'level' => env('LOG_LEVEL', 'error'),
+            'level' => env('LOG_LEVEL', 'debug'),
             'replace_placeholders' => true,
         ],
 
@@ -97,15 +133,12 @@ return [
         |--------------------------------------------------------------------------
         | Emergency
         |--------------------------------------------------------------------------
-        |
-        | Jangan arahkan ke storage/logs/laravel.log karena
-        | filesystem Vercel bersifat read-only.
-        |
         */
 
         'emergency' => [
-            'path' => '/tmp/laravel-emergency.log',
+            'path' => 'php://stderr',
         ],
+
     ],
 
 ];
