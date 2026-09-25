@@ -6,9 +6,6 @@ return [
     |--------------------------------------------------------------------------
     | View Storage Paths
     |--------------------------------------------------------------------------
-    |
-    | Lokasi folder yang digunakan Laravel untuk mencari file Blade.
-    |
     */
 
     'paths' => [
@@ -19,12 +16,6 @@ return [
     |--------------------------------------------------------------------------
     | Compiled View Path
     |--------------------------------------------------------------------------
-    |
-    | Laravel menyimpan hasil kompilasi Blade di folder ini.
-    |
-    | Jangan menggunakan realpath() karena folder tersebut bisa belum ada
-    | saat proses deployment atau saat menjalankan artisan command.
-    |
     */
 
     'compiled' => env(
