@@ -1,34 +1,38 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Create The Application
-|--------------------------------------------------------------------------
-|
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
-|
-*/
-
 $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
 /*
 |--------------------------------------------------------------------------
-| Determine Storage Path
+| Vercel / Serverless Storage
 |--------------------------------------------------------------------------
 |
-| Laravel normally uses the "storage" folder inside the project.
-|
-| When running on Vercel, the project filesystem is read-only, so we
-| redirect Laravel's writable storage to /tmp/storage.
+| Vercel memiliki filesystem read-only.
+| Hanya /tmp yang dapat digunakan untuk file sementara.
 |
 */
 
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
     $app->useStoragePath('/tmp/storage');
+
+    $directories = [
+        '/tmp/storage',
+        '/tmp/storage/framework',
+        '/tmp/storage/framework/cache',
+        '/tmp/storage/framework/cache/data',
+        '/tmp/storage/framework/sessions',
+        '/tmp/storage/framework/views',
+        '/tmp/storage/logs',
+        '/tmp/views',
+    ];
+
+    foreach ($directories as $directory) {
+        if (! is_dir($directory)) {
+            @mkdir($directory, 0777, true);
+        }
+    }
 }
 
 /*
@@ -51,11 +55,5 @@ $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
     App\Exceptions\Handler::class
 );
-
-/*
-|--------------------------------------------------------------------------
-| Return The Application
-|--------------------------------------------------------------------------
-*/
 
 return $app;
