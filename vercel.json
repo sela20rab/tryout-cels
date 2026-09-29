@@ -6,21 +6,21 @@
     {
       "src": "api/index.php",
       "use": "vercel-php@0.7.3"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
     }
   ],
 
   "routes": [
     {
-      "src": "/build/(.*)",
-      "dest": "/public/build/$1"
+      "src": "/(build|css|js|images|fonts|assets)/(.*)",
+      "dest": "/public/$1/$2"
     },
     {
-      "src": "/",
-      "dest": "/api/index.php"
-    },
-    {
-      "src": "/index\\.php",
-      "dest": "/api/index.php"
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
     },
     {
       "handle": "filesystem"
@@ -34,16 +34,9 @@
   "env": {
     "APP_ENV": "production",
     "APP_DEBUG": "false",
-
-    "APP_CONFIG_CACHE": "/tmp/config.php",
-    "APP_EVENTS_CACHE": "/tmp/events.php",
-    "APP_PACKAGES_CACHE": "/tmp/packages.php",
-    "APP_ROUTES_CACHE": "/tmp/routes.php",
-    "APP_SERVICES_CACHE": "/tmp/services.php",
-
+    "LOG_CHANNEL": "stderr",
     "CACHE_DRIVER": "array",
     "SESSION_DRIVER": "cookie",
-    "LOG_CHANNEL": "stderr",
     "VIEW_COMPILED_PATH": "/tmp/views"
   }
 }
