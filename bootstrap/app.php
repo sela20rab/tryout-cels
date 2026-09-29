@@ -16,11 +16,29 @@ if (
 ) {
     /*
     |--------------------------------------------------------------------------
+    | Writable paths for Vercel
+    |--------------------------------------------------------------------------
+    */
+
+    $storagePath = '/tmp/storage';
+    $bootstrapPath = '/tmp/bootstrap';
+    $bootstrapCachePath = '/tmp/bootstrap/cache';
+
+    /*
+    |--------------------------------------------------------------------------
     | Laravel Storage
     |--------------------------------------------------------------------------
     */
 
-    $app->useStoragePath('/tmp/storage');
+    $app->useStoragePath($storagePath);
+
+    /*
+    |--------------------------------------------------------------------------
+    | Laravel Bootstrap
+    |--------------------------------------------------------------------------
+    */
+
+    $app->useBootstrapPath($bootstrapPath);
 
     /*
     |--------------------------------------------------------------------------
@@ -29,16 +47,18 @@ if (
     */
 
     $directories = [
-        '/tmp/storage',
-        '/tmp/storage/app',
-        '/tmp/storage/framework',
-        '/tmp/storage/framework/cache',
-        '/tmp/storage/framework/cache/data',
-        '/tmp/storage/framework/sessions',
-        '/tmp/storage/framework/testing',
-        '/tmp/storage/framework/views',
-        '/tmp/storage/logs',
-        '/tmp/views',
+        $storagePath,
+        $storagePath . '/app',
+        $storagePath . '/framework',
+        $storagePath . '/framework/cache',
+        $storagePath . '/framework/cache/data',
+        $storagePath . '/framework/sessions',
+        $storagePath . '/framework/testing',
+        $storagePath . '/framework/views',
+        $storagePath . '/logs',
+
+        $bootstrapPath,
+        $bootstrapCachePath,
     ];
 
     foreach ($directories as $directory) {
