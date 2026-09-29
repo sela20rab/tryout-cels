@@ -7,6 +7,7 @@ import TIU from '../pages/TIU'
 import TKP from '../pages/TKP'
 import Materi from '../pages/Materi'
 import Test from '../pages/Test'
+import TestTwk from '../pages/TestTwk'
 
 export default function App() {
     return (
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/tkp" element={<TKP />} />
             <Route path="/materi/:id" element={<Materi />} />
             <Route path="/test/:id" element={<Test />} />
+            <Route path="/test-twk" element={<TestTwk />}/>
         </Routes>
     )
 }

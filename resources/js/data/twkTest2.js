@@ -2,7 +2,7 @@ export const twkTest2 = [
     {
         id: 1,
         question:
-            'Teks pembukaan UUD 1945 terdiri atas empat alinea yang memiliki makna tersendiri. Salah satu makna yang terkandung dalam alinea kedua adalah....',
+            'Teks pembukaan UUD 1945 terdiri atas empat alinea yang memiliki makna tersendiri. Salah satu makna yang terkandung dalam alinea kedua adalah.....',
         options: [
             'Keteguhan bangsa Indonesia dalam membela kemerdekaan melawan penjajah dalam segala bentuk',
             'Keinginan yang didambakan oleh segenap bangsa Indonesia terhadap suatu kehidupan yang berkesinambungan antara kehidupan material dan spritual, dan kehidupan di dunia dan akhirat',
@@ -50,7 +50,7 @@ export const twkTest2 = [
     {
         id: 4,
         question:
-            'Dalam sistem ketatanegaraan Indonesia, KPK merupakan lembaga independen yang berwenang memberantas korupsi, namun tetap terkait dengan cabang kekuasaan eksekutif dan legislatif. Peran Presiden terhadap KPK secara konstitusional adalah... (TWK SKD 2025)',
+            'Dalam sistem ketatanegaraan Indonesia, KPK merupakan lembaga independen yang berwenang memberantas korupsi, namun tetap terkait dengan cabang kekuasaan eksekutif dan legislatif. Peran Presiden terhadap KPK secara konstitusional adalah...(TWK SKD 2025)',
         options: [
             'Menyetujui pembentukan KPK secara langsung tanpa melalui proses legislasi DPR',
             'Melakukan tindak penindakan kasus korupsi yang ditangani KPK',
@@ -66,7 +66,7 @@ export const twkTest2 = [
     {
         id: 5,
         question:
-            'Pasal 11 ayat (1) UUD 1945 menyebutkan bahwa Presiden berwenang menyatakan perang. Agar keputusan tersebut sah menurut konstitusi, Presiden harus mendapat persetujuan dari... (TWK SKD 2025)',
+            'Pasal 11 ayat (1) UUD 1945 menyebutkan bahwa Presiden berwenang menyatakan perang. Agar keputusan tersebut sah menurut konstitusi, Presiden harus mendapat persetujuan dari...(TWK SKD 2025)',
         options: [
             'Mahkamah Agung agar keputusan sesuai hukum nasional.',
             'Mahkamah Konstitusi untuk memastikan kesesuaian dengan UUD.',
@@ -82,7 +82,7 @@ export const twkTest2 = [
     {
         id: 6,
         question:
-            'BPK berwenang memeriksa pengelolaan dan tanggung jawab keuangan negara. Dalam kaitannya dengan DPR, kewenangan yang paling tepat dimiliki BPK adalah... (TWK SKD 2025)',
+            'BPK berwenang memeriksa pengelolaan dan tanggung jawab keuangan negara. Dalam kaitannya dengan DPR, kewenangan yang paling tepat dimiliki BPK adalah...(TWK SKD 2025)',
         options: [
             'Memberikan rekomendasi kebijakan anggaran untuk meningkatkan transparansi DPR.',
             'Menyetujui rencana anggaran DPR sebelum kegiatan dilaksanakan.',
@@ -98,7 +98,7 @@ export const twkTest2 = [
     {
         id: 7,
         question:
-            'Seorang mantan Presiden yang baru menyelesaikan satu periode masa jabatan kembali mendapat dukungan untuk mencalonkan diri pada pemilu berikutnya. Menurut UUD 1945, hal ini diperbolehkan karena... (TWK SKD 2025)',
+            'Seorang mantan Presiden yang baru menyelesaikan satu periode masa jabatan kembali mendapat dukungan untuk mencalonkan diri pada pemilu berikutnya. Menurut UUD 1945, hal ini diperbolehkan karena...(TWK SKD 2025)',
         options: [
             'Pasal 7 UUD 1945 memberi kesempatan Presiden untuk terus maju selama rakyat mendukung.',
             'Seorang Presiden boleh mencalonkan diri kembali apabila partai politik mengusulkannya.',
@@ -114,7 +114,7 @@ export const twkTest2 = [
     {
         id: 8,
         question:
-            'Dalam proses perumusan UUD 1945 pasca amandemen, Presiden dan DPR tidak berdiri sendiri tetapi saling mengimbangi agar tidak ada kekuasaan yang dominan. Hubungan keduanya disebut sebagai... (TWK SKD 2025)',
+            'Dalam proses perumusan UUD 1945 pasca amandemen, Presiden dan DPR tidak berdiri sendiri tetapi saling mengimbangi agar tidak ada kekuasaan yang dominan. Hubungan keduanya disebut sebagai...(TWK SKD 2025)',
         options: [
             'Prinsip kerjasama antar lembaga dalam menjalankan pemerintahan',
             'Perwujudan kedaulatan rakyat melalui wakil rakyat',
@@ -178,7 +178,7 @@ export const twkTest2 = [
     {
         id: 12,
         question:
-            'Seorang presiden yang baru terpilih ingin menguatkan hubungan diplomatik dengan beberapa negara sahabat. Ia berencana mengangkat beberapa duta dan konsul yang akan ditempatkan di negara-negara tersebut. Sebelum pengangkatan, presiden perlu meminta pertimbangan dari lembaga tertentu untuk memastikan calon duta dan konsul sesuai dengan kepentingan nasional. Mengingat ketentuan dalam UUD 1945, kepada lembaga manakah presiden harus meminta pertimbangan dalam proses pengangkatan tersebut? (TWK CPNS 2024)',
+            'Seorang presiden yang baru terpilih ingin menguatkan hubungan diplomatik dengan beberapa negara sahabat. la berencana mengangkat beberapa duta dan konsul yang akan ditempatkan di negara-negara tersebut. Sebelum pengangkatan, presiden perlu meminta pertimbangan dari lembaga tertentu untuk memastikan calon duta dan konsul sesuai dengan kepentingan nasional. Mengingat ketentuan dalam UUD 1945, kepada lembaga manakah presiden harus meminta pertimbangan dalam proses pengangkatan tersebut? (TWK CPNS 2024)',
         options: [
             'Dewan Pertimbangan Presiden karena lembaga ini memberikan saran kepada presiden dalam berbagai keputusan',
             'Mahkamah Agung karena berfungsi untuk mengawasi keputusan presiden dalam menjalankan pemerintahan',
@@ -215,7 +215,7 @@ export const twkTest2 = [
             'Terjadinya konflik antara pemerintah pusat dan pemerintah daerah',
             'Menurunnya nilai hukum dan legitimasi dari peraturan daerah tersebut',
             'Perda tersebut berpotensi dibatalkan karena melanggar kewenangan yang diatur dalam konstitusi',
-            'Tindakan hukum akan diambil untuk menyelaraskan Perda dengan Ketentuan konstitusi',
+            'Tindakan hukum akan diambil untuk menyelaraskan Perda dengan ketentuan konstitusi',
             'Perda tetap berlaku tetapi dengan pengawasan ketat dari pemerintah pusat',
         ],
         answer: 2,
@@ -254,11 +254,10 @@ export const twkTest2 = [
         explanation:
             'Makna dari frasa "Presiden memegang kekuasaan pemerintahan menurut Undang-Undang Dasar" adalah bahwa Presiden memiliki kewenangan dalam menjalankan pemerintahan, tetapi kewenangan tersebut tetap harus dilaksanakan berdasarkan UUD 1945 dan hukum yang berlaku.\n\nJawaban: B',
     },
-
-    {
+        {
         id: 17,
         question:
-            'Jokowi melantik Nadiem Anwar Makarim sebagai Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi (Mendikbud-Ristek), sedangkan Bahlil Lahadalia dilantik sebagai Menteri Investasi/Kepala Badan Koordinasi Penanaman Modal (BKPM). Dalam Pasal 1 Ayat (1) UUD NRI Tahun 1945 menyatakan, bahwa "Negara Indonesia ialah Negara Kesatuan, yang berbentuk Republik", artinya ....',
+            'Perhatikan Informasi berikut!\n\nJokowi melantik Nadiem Anwar Makarim sebagai Menteri Pendidikan, Kebudayaan, Riset, dan Teknologi (Mendikbud-Ristek), sedangkan Bahlil Lahadalia dilantik sebagai Menteri Investasi/Kepala Badan Koordinasi Penanaman Modal (BKPM). Dalam Pasal 1 Ayat (1) UUD NRI Tahun 1945 menyatakan, bahwa "Negara Indonesia ialah Negara Kesatuan, yang berbentuk Republik", artinya ....',
         options: [
             'Menteri-menteri negara bekerja secara profesional',
             'Menteri-menteri negara berasal dari partai politik',
@@ -268,7 +267,7 @@ export const twkTest2 = [
         ],
         answer: 2,
         explanation:
-            'Menurut pembahasan yang diberikan, ketentuan tersebut menunjukkan bahwa menteri-menteri negara bertanggung jawab kepada Presiden.\n\nJawaban: C',
+            'Menurut Pasal 1 Ayat (1) UUD NRI 1945 yaitu "Negara Indonesia ialah Negara Kesatuan, yang berbentuk Republik", hal ini memiliki arti bahwa Menteri -menteri negara bertanggung jawab kepada Presiden.\n\nJawaban: C',
     },
 
     {
@@ -284,13 +283,13 @@ export const twkTest2 = [
         ],
         answer: 4,
         explanation:
-            'Mahkamah Konstitusi memiliki kewenangan menguji undang-undang terhadap UUD 1945. Apabila suatu undang-undang dinyatakan bertentangan dengan konstitusi, MK dapat menyatakan ketentuan tersebut tidak mempunyai kekuatan hukum mengikat. Hal ini menunjukkan peran MK sebagai penjaga konstitusi.\n\nJawaban: E',
+            'Mahkamah Konstitusi (MK) memiliki peran penting dalam sistem peradilan Indonesia sebagai lembaga pengawas kewenangan konstitusional. Salah satu aspek penting dari peran MK adalah kemampuannya untuk membatalkan undang-undang yang bertentangan dengan konstitusi. MK berfungsi sebagai penjaga konstitusi dan memiliki wewenang untuk menguji kekonstitusionalan undang-undang yang telah disahkan oleh lembaga legislatif. Apabila MK menemukan bahwa suatu undang-undang melanggar ketentuan-ketentuan konstitusi, MK dapat memutuskan untuk membatalkan undang-undang tersebut. Tindakan ini merupakan bentuk perlindungan terhadap konstitusi sebagai hukum dasar negara dan memastikan kesesuaian setiap undang-undang dengan prinsip-prinsip dan nilai-nilai yang terkandung dalam konstitusi. Dengan demikian, MK berperan sebagai lembaga yang menjaga keberlakuan konstitusi dan melindungi hak-hak serta kepentingan konstitusional masyarakat Indonesia.\n\nJawaban: E',
     },
 
     {
         id: 19,
         question:
-            'Dalam proses pengangkatan duta, peran Dewan Perwakilan Rakyat (DPR) menjadi sangat penting dalam memberikan pertimbangan kepada Presiden. Aspek yang paling tepat mencerminkan pentingnya pertimbangan DPR dalam pengangkatan duta adalah... (TWK CPNS 2023)',
+            'Dalam proses pengangkatan duta, peran Dewan Perwakilan Rakyat (DPR) menjadi sangat penting dalam memberikan pertimbangan kepada Presiden. Aspek yang paling tepat mencerminkan pentingnya pertimbangan DPR dalam pengangkatan duta adalah ... (TWK CPNS 2023)',
         options: [
             'DPR memiliki wewenang untuk secara langsung mengangkat duta tanpa melibatkan Presiden.',
             'DPR bertugas untuk menentukan gaji dan tunjangan bagi para duta yang diangkat oleh Presiden.',
@@ -300,7 +299,7 @@ export const twkTest2 = [
         ],
         answer: 2,
         explanation:
-            'DPR memberikan pertimbangan terhadap calon duta yang diajukan Presiden. Pertimbangan tersebut dapat mencakup penilaian dan evaluasi terhadap calon sebelum proses pengangkatan dilakukan.\n\nJawaban: C',
+            'Dalam proses pengangkatan duta, peran Dewan Perwakilan Rakyat (DPR) menjadi sangat penting dalam memberikan pertimbangan kepada Presiden. Aspek yang paling tepat mencerminkan pentingnya pertimbangan DPR adalah saran dan evaluasi yang diberikan terhadap calon duta yang diajukan oleh Presiden. DPR memiliki tugas untuk memberikan penilaian dan evaluasi terhadap latar belakang, kompetensi, dan kualifikasi calon duta yang diajukan. Melalui proses ini, DPR dapat memastikan bahwa calon duta yang diangkat oleh Presiden memiliki kemampuan yang sesuai dengan tugas dan tanggung jawab sebagai perwakilan diplomatik negara di luar negeri.\n\nJawaban: C',
     },
 
     {
@@ -316,7 +315,7 @@ export const twkTest2 = [
         ],
         answer: 2,
         explanation:
-            'Mahkamah Konstitusi menjaga keseimbangan dalam menjalankan tugasnya dengan memperhatikan keputusan lembaga legislatif dan menafsirkannya secara sejalan dengan konstitusi. MK tidak seharusnya membuat keputusan berdasarkan kepentingan atau pandangan pribadi hakim.\n\nJawaban: C',
+            'Mahkamah Konstitusi (MK) menjaga keseimbangan dalam menjalankan tugasnya dalam konteks pengujian undang-undang terhadap konstitusi dengan cara memperhatikan keputusan-keputusan lembaga legislatif dan berusaha untuk menafsirkannya secara sejalan dengan konstitusi. MK tidak memiliki wewenang untuk secara sembarangan mengesampingkan keputusan lembaga legislatif atau membuat keputusan yang hanya didasarkan pada pandangan pribadi hakim-hakim konstitusi.\n\nJawaban: C',
     },
 
     {
@@ -332,13 +331,13 @@ export const twkTest2 = [
         ],
         answer: 3,
         explanation:
-            'Setelah amandemen UUD 1945, kedudukan lembaga-lembaga negara diatur dengan prinsip pembagian kekuasaan dan checks and balances. Lembaga eksekutif memiliki kedudukan yang setara dengan lembaga legislatif dan yudikatif dengan kewenangan masing-masing.\n\nJawaban: D',
+            'Setelah amandemen UUD 1945, lembaga eksekutif memiliki status yang setara dengan lembaga legislatif dan yudikatif, dengan kewenangan yang seimbang di dalam sistem pemerintahan. Ini menggambarkan perubahan signifikan dalam sistem pemerintahan Indonesia yang mendorong prinsip pembagian kekuasaan yang seimbang antara lembaga-lembaga pemerintahan.\n\nJawaban: D',
     },
 
     {
         id: 22,
         question:
-            'Pada UUD 1945, Pasal 27 ayat (3) mengamanatkan bahwa "Setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara." Berikut merupakan pengertian upaya pembelaan negara yang paling tepat adalah...',
+            'Pada UUD 1945, Pasal 27 ayat (3) mengamanatkan bahwa "Setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara." Berikut merupakan pengertian upaya pembelaan negara yang paling tepat adalah ...',
         options: [
             'Pengetahuan warga negara yang dijiwai kecintaan kepada NKRI berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara.',
             'Pemahaman warga negara yang dijiwai kecintaan NKRI berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara.',
@@ -348,13 +347,13 @@ export const twkTest2 = [
         ],
         answer: 3,
         explanation:
-            'Upaya pembelaan negara adalah sikap dan perilaku warga negara yang dijiwai kecintaan kepada NKRI berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara. Pembelaan negara tidak hanya berupa sikap, tetapi juga diwujudkan dalam perilaku atau tindakan.\n\nJawaban: D',
+            'Upaya pembelaan negara adalah sikap dan perilaku warga negara yang dijiwai kecintaan kepada NKRI berdasarkan Pancasila dan UUD 1945 dalam menjamin kelangsungan hidup bangsa dan negara. Jadi, bukan hanya sikap saja untuk menunjukkan rasa kecintaan pada NKRI, tetapi juga memerlukan perilaku atau tindakan dari setiap warga negara juga harus dilakukan untuk menjaga keutuhan NKRI.\n\nJawaban: D',
     },
 
     {
         id: 23,
         question:
-            'Sebelum amandemen, pasal 28 hanya memberikan kebebasan rakyat Indonesia sebagai makhluk sosial untuk berkumpul, berserikat, dan mengeluarkan pendapat. Namun, setelah amandemen, pasal 28 menjamin hak asasi manusia seluruhnya. Pada pasal 28 berbunyi "kemerdekaan berserikat dan berkumpul, mengeluarkan pikiran dengan lisan dan tulisan dan sebagainya ditetapkan dengan undang-undang." Salah satu pengamalan pasal ini yaitu...',
+            'Sebelum amendemen, pasal 28 hanya memberikan kebebasan rakyat Indonesia sebagai makhluk sosial untuk berkumpul, berserikat, dan mengeluarkan pendapat. Namun, setelah amendemen, pasal 28 menjamin hak asasi manusia seluruhnya. Pada pasal 28 berbunyi "kemerdekaan berserikat dan berkumpul, mengeluarkan pikiran dengan lisan dan tulisan dan sebagainya ditetapkan dengan undang-undang". Salah satu pengamalan pasal ini yaitu...',
         options: [
             'Aksi unjuk rasa yang dilakukan mahasiswa berakhir ricuh.',
             'Ketua organisasi muda-mudi menetapkan aturan denda bagi anggotanya yang tidak menghadiri rapat.',
@@ -364,7 +363,7 @@ export const twkTest2 = [
         ],
         answer: 2,
         explanation:
-            'Salah satu pengamalan Pasal 28 UUD 1945 adalah kegiatan berkumpul dan mengeluarkan pikiran secara lisan. Budi, Laras, Eno, dan Citra yang mendiskusikan rencana perayaan HUT RI menunjukkan adanya kegiatan berkumpul dan menyampaikan pendapat.\n\nJawaban: C',
+            'Salah satu pengamalan pasal 28 UUD 1945 yaitu: Budi, Laras, Eno dan Citra sedang mendiskusikan rencana perayaan HUT RI di kampungnya. Pada saat berdiskusi tersebut, mereka menyuarakan pikirannya secara lisan.\n\nJawaban: C',
     },
 
     {
@@ -373,14 +372,14 @@ export const twkTest2 = [
             'Pada Bunyi pasal 28C ayat 1 Setiap orang berhak mengembangkan diri melalui pemenuhan kebutuhan dasarnya, berhak mendapat pendidikan dan memperoleh manfaat dari ilmu pengetahuan dan teknologi, seni dan budaya, demi meningkatkan kualitas hidupnya dan demi kesejahteraan umat manusia. Pernyataan dibawah ini yang sesuai dari isi pasal diatas adalah...',
         options: [
             'Setiap orang berhak mengembangkan diri melalui pemenuhan kebutuhan dasarnya, berhak mendapatkan pendidikan dan memperoleh manfaat dari ilmu pengetahuan dan teknologi, seni dan budaya, demi meningkatkan kualitas hidupnya dan demi kesejahteraan umat manusia',
-            'Setiap orang berhak membentuk keluarga yang harmonis dan sejahtera melalui perkawinan yang sah',
-            'Setiap orang berhak untuk hidup serta berhak mempertahankan hidup dan mehidupanya',
+            'Setiap orang berhak membentuk keluarga yang harmonis dan sejahterah melalu perkawinan yang sah',
+            'Setiap orang berhak untuk hidup serta berhak mempertahankan hidup dan kehidupanya',
             'Setiap orang berhak atas pengakuan, jaminan, perlindungan dan kepastian hukum yang adil serta perlakuan yang sama dihadapan hukum',
-            'Setiap orang berhak atas kebebasan meyakini kepercayaan, menyatakan pikiran dan sikap sesuai dengan hati nuraninya.',
+            'Setiap orang berhak atas kebebasan menyakini kepercayaan, menyatakan pikiran dan sikap sesuai dengan hati nuraninya.',
         ],
         answer: 0,
         explanation:
-            'Pasal 28C ayat (1) UUD 1945 secara langsung menyatakan bahwa setiap orang berhak mengembangkan diri melalui pemenuhan kebutuhan dasarnya, memperoleh pendidikan, serta memperoleh manfaat dari ilmu pengetahuan dan teknologi, seni dan budaya demi meningkatkan kualitas hidup dan kesejahteraan umat manusia.\n\nJawaban: A',
+            'Bunyi pasal 28C (1) "Setiap orang berhak mengembangkan diri melalui pemenuhan kebutuhan dasarnya, berhak mendapat pendidikan dan memperoleh manfaat dari ilmu pengetahuan dan teknologi, seni dan budaya, demi meningkatkan kualitas hidupnya dan demi kesejahteraan umat manusia". (2) "Setiap orang berhak untuk memajukan dirinya dalam memperjuangkan haknya secara kolektif untuk membangun masyarakat, bangsa dan negaranya"\n\nJawaban: A',
     },
 
     {
@@ -396,7 +395,7 @@ export const twkTest2 = [
         ],
         answer: 0,
         explanation:
-            'Pasal 29 ayat (2) memiliki makna bahwa negara menjamin kemerdekaan penduduknya untuk memeluk agama dan beribadah menurut agama serta kepercayaannya. Kebebasan beragama merupakan bagian dari penghormatan terhadap martabat manusia sebagai makhluk ciptaan Tuhan dan tidak boleh dilakukan dengan paksaan.\n\nJawaban: A',
+            'Pasal 29 Ayat kedua memiliki makna negara menjamin kemerdekaan penduduknya untuk beragama dan beribadah. Artinya, negara akan melindungi, menjamin, membina, dan mengarahkan kehidupan beragama sesuai dengan kepercayaan yang dianutnya. Setiap orang menganut agama dan kepercayaannya tanpa ada paksaan dari pihak mana pun. Pemerintah Indonesia juga memberikan kebebasan terhadap warga untuk meyakini dan beribadah sesuai dengan kepercayaan masing-masing.\n\nJawaban: A',
     },
 
     {
@@ -405,20 +404,20 @@ export const twkTest2 = [
             'Negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agama nya masing-masing dan untuk beribadat menurut agamanya dan kepercayaannya itu. Berdasarkan ketentuan pasal 29 ayat (2) tersebut setiap penduduk Indonesia berhak... (TWK SKD 2022)',
         options: [
             'Mengajak orang lain memeluk salah satu agama sesuai keyakinan kita',
-            'Memeluk salah satu agama yang diakui pemerintah Indonesia',
+            'Memeluk salah satu agama yang diakui pemerintah indonesia',
             'Merestui pernikahan lintas agama',
             'Melaksanakan ibadah dengan khusyuk',
             'Saling menghargai dan menghormati terhadap ritual keagamaan masing-masing',
         ],
         answer: 1,
         explanation:
-            'Berdasarkan pembahasan soal, ketentuan Pasal 29 ayat (2) memberikan hak kepada setiap penduduk Indonesia untuk memeluk salah satu agama yang diakui pemerintah Indonesia.\n\nJawaban: B',
+            'Berdasarkan ketentuan pasal 29 ayat (2) tersebut setiap penduduk Indonesia berhak memeluk salah satu agama yang diakui pemerintah Indonesia.\n\nJawaban: B',
     },
 
     {
         id: 27,
         question:
-            'Pasal 22E ayat 1 yang berbunyi bahwa pemilu dilaksanakan secara langsung, umum, bebas, rahasia, jujur, dan adil. Maksud dari pelaksanaan pemilu yang bebas adalah pemilih...',
+            'Pasal 22E ayat 1 yang berbunyi bahwa pemilu dilaksanakan secara langsung. umum, bebas, rahasia, jujur, dan adil. Maksud dari pelaksanaan pemilu yang bebas adalah pemilih...',
         options: [
             'Bebas menentukan pilihannya tanpa paksaan dari pihak manapun',
             'Harus menjaga kerahasiaan yang dipilihnya',
@@ -428,7 +427,7 @@ export const twkTest2 = [
         ],
         answer: 0,
         explanation:
-            'Asas bebas dalam pemilu berarti rakyat memiliki kebebasan untuk menentukan pilihannya sesuai hati nurani tanpa adanya paksaan, tekanan, atau pengaruh dari pihak mana pun.\n\nJawaban: A',
+            'Luber jurdil adalah singkatan dari langsung, umum, bebas, rahasia, jujur, dan adil. Hal ini diatur dalam Pasal 2 UU No. 7 Tahun 2017 (UU Pemilu) yang bunyinya sebagai berikut: "Pemilu dilaksanakan berdasarkan asas langsung, umum, bebas, rahasia, jujur, dan adil" bunyi Pasal 2 UU Pemilu. Pada arti kata bebas itu sendiri adalah rakyat berhak memilih sesuai hati nurani tanpa adanya paksaan, tekanan, atau pengaruh dari pihak manapun.\n\nJawaban: A',
     },
 
     {
@@ -437,14 +436,14 @@ export const twkTest2 = [
             'Pasal 33 ayat 2 yang berbunyi "Cabang-cabang produksi yang penting bagi negara dan yang menguasai hajat hidup orang banyak dikuasai oleh negara". Hajat hidup orang banyak adalah kebutuhan yang di mana akan dibutuhkan banyak orang atau suatu hal yang menjadi kebutuhan banyak orang. Tujuan dari pasal tersebut adalah...',
         options: [
             'Pemerintah menguasai cabang produksi',
-            'Pemerintah dapat mengatur semua laju perekonomian',
+            'Agar pemerintah dapat mengatur semua laju perekonomian',
             'Agar pertumbuhan ekonomi masyarakat bisa meningkat',
             'Agar perekonomian Indonesia dapat terencana dengan baik',
             'Agar perekonomian tidak hanya dikuasai oleh individu atau sekelompok orang saja sehingga dapat digunakan untuk kepentingan masyarakat luas',
         ],
         answer: 4,
         explanation:
-            'Tujuan ketentuan Pasal 33 ayat (2) adalah agar cabang-cabang produksi yang penting dan menguasai hajat hidup orang banyak tidak hanya dikuasai oleh individu atau kelompok tertentu, tetapi dapat dikelola untuk kepentingan masyarakat luas dan kemakmuran rakyat.\n\nJawaban: E',
+            'Tujuan pasal tersebut yaitu agar perekonomian tidak hanya dikuasai oleh individu atau sekelompok orang saja. Cabang-cabang produksi tersebut selanjutnya dapat diolah dan digunakan untuk kepentingan masyarakat luas dan untuk memakmurkan rakyatnya.\n\nJawaban: E',
     },
 
     {
@@ -460,7 +459,7 @@ export const twkTest2 = [
         ],
         answer: 0,
         explanation:
-            'Pasal 33 ayat (3) UUD 1945 mengamanatkan bahwa pengelolaan sumber daya alam harus dilakukan sebesar-besarnya untuk kemakmuran rakyat. Pengelolaan sumber daya alam secara transparan dan adil merupakan contoh penerapan yang paling langsung dari ketentuan tersebut.\n\nJawaban: A',
+            'Pasal 33 ayat (3) UUD 1945 mengamanatkan bahwa pengelolaan sumber daya alam harus dilakukan sebesar-besarnya untuk kemakmuran rakyat. Pemerintah mengelola sumber daya alam dengan transparan dan adil (opsi A) adalah contoh konkret penerapan pasal ini. Pengelolaan yang transparan memastikan bahwa hasil dari kekayaan alam didistribusikan secara adil dan merata, sehingga semua lapisan masyarakat dapat menikmati manfaatnya, mengurangi kesenjangan sosial, dan meningkatkan kesejahteraan umum. Opsi B, memberikan subsidi bahan bakar, penting untuk kesejahteraan tetapi lebih berfokus pada pengendalian harga bahan bakar daripada pengelolaan kekayaan alam secara menyeluruh. Opsi C, pembangunan infrastruktur di daerah terpencil, sangat penting namun lebih terkait dengan pemerataan pembangunan daripada pengelolaan sumber daya alam. Opsi D, akses internet yang memadai, juga penting untuk perkembangan teknologi dan komunikasi tetapi tidak terkait langsung dengan distribusi hasil kekayaan alam. Opsi E, layanan kesehatan gratis, sangat penting untuk kesejahteraan sosial namun tidak mencerminkan pengelolaan kekayaan alam.\n\nJawaban: A',
     },
 
     {
@@ -476,13 +475,13 @@ export const twkTest2 = [
         ],
         answer: 1,
         explanation:
-            'Opsi B merupakan bentuk implementasi Pasal 34 ayat (1), yaitu pemberian bantuan pemerintah kepada masyarakat dari keluarga kurang mampu. Program seperti Kartu Indonesia Pintar bertujuan membantu pelajar dari keluarga kurang mampu memperoleh pendidikan yang layak.\n\nJawaban: B',
+            'Pada opsi B merupakan bentuk dari program pemerintah yaitu Program Indonesia Pintar untuk membantu pelajar dari keluarga kurang mampu mendapatkan pendidikan yang layak.\n\nJawaban: B',
     },
 
     {
         id: 31,
         question:
-            'Pokok pikiran pertama pembukaan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, "Negara melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia dengan berdasar atas persatuan dengan mewujudkan keadilan sosial bagi seluruh rakyat Indonesia". Perwujudannya di antaranya adalah ...',
+            'Pokok pikiran pertama pembukaan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945, "Negara melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia dengan berdasar atas persatuan dengan mewujudkan keadilan sosial bagi seluruh rakyat Indonesia". Perwujudannya di antaranya adalah .....',
         options: [
             'Pembangunan nasional di segala bidang',
             'Pembentukan TNI dan Kepolisian',
@@ -492,13 +491,13 @@ export const twkTest2 = [
         ],
         answer: 1,
         explanation:
-            'Undang-Undang Dasar 1945 memuat empat pokok pikiran. Perwujudan pokok pikiran pertama, yaitu negara melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia dengan berdasar atas persatuan, di antaranya adalah pembentukan TNI dan Kepolisian sebagai upaya melindungi dan menjaga keamanan seluruh rakyat Indonesia.\n\nJawaban: B',
+            'Undang-Undang Dasar 1945 memuat empat pokok pikiran, keempat alinea masing-masing mengandung citacita luhur dan filosofis. Perwujudan, "Negara melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia dengan berdasar atas persatuan dengan mewujudkan keadilan sosial bagi seluruh rakyat Indonesia." adalah pembentukan TNI dan Kepolisian sebagai upaya melindungi dan menjaga keamanan seluruh rakyat Indonesia.\n\nJawaban: B',
     },
 
     {
         id: 32,
         question:
-            'UUD NRI 1945 mengandung ketentuan yang memberikan kebebasan dalam menjalankan ibadah sesuai dengan agama dan kepercayaan masing-masing. Contoh perilaku yang mencerminkannya adalah ....',
+            'UUD NRI 1945 mengandung ketentuan yang memberikan kebebasan dalam menjalankan ibadah sesuai dengan agama dan kepercayaan masing masing. Contoh perilaku yang mencerminkannya adalah',
         options: [
             'Mempelajari ajaran agama masing-masing dengan baik agar tidak timbul kesalahan dalam menjalankannya',
             'Berpedoman pada ajaran agama masing-masing sebagai sikap hidup agar tidak menimbulkan dosa',
@@ -508,6 +507,6 @@ export const twkTest2 = [
         ],
         answer: 2,
         explanation:
-            'Opsi D dan E salah. Opsi yang paling tepat adalah C, yaitu menghormati dan memberikan kesempatan kepada orang lain untuk menjalankan ibadahnya. Perilaku tersebut mencerminkan penghormatan terhadap kebebasan beragama dan nilai kebhinekaan.\n\nJawaban: C',
+            'Opsi D dan E salah. Opsi yang paling tepat adalah C dengan menghormati dan memberikan kesempatan untuk menjalankan beribadah mencerminkan nilai Kebhinekaan.\n\nJawaban: C',
     },
-]
+];

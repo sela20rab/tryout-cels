@@ -6,6 +6,7 @@ import {
     BookOpen,
     FileQuestion,
     Sparkles,
+    Trophy,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -17,28 +18,36 @@ export default function TWK() {
 
             {/* ================= BACKGROUND ================= */}
             <div className="fixed inset-0 pointer-events-none overflow-hidden">
+
                 <div className="absolute -top-40 -left-40 w-96 h-96 bg-red-500/10 rounded-full blur-3xl" />
 
                 <div className="absolute top-1/3 -right-40 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl" />
 
                 <div className="absolute bottom-0 left-1/3 w-96 h-96 bg-red-500/5 rounded-full blur-3xl" />
+
             </div>
 
 
             {/* ================= CONTENT ================= */}
             <section className="relative z-10 max-w-7xl mx-auto px-5 md:px-6 py-8 md:py-12">
 
-
                 {/* ================= BACK ================= */}
                 <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    initial={{
+                        opacity: 0,
+                        x: -20,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        x: 0,
+                    }}
                 >
                     <Link
                         to="/"
                         className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition"
                     >
                         <ArrowLeft size={18} />
+
                         Kembali ke Beranda
                     </Link>
                 </motion.div>
@@ -46,17 +55,27 @@ export default function TWK() {
 
                 {/* ================= HEADER ================= */}
                 <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    initial={{
+                        opacity: 0,
+                        y: 30,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        y: 0,
+                    }}
+                    transition={{
+                        duration: 0.5,
+                    }}
                     className="mt-10 mb-10 md:mb-12"
                 >
 
                     {/* Icon */}
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-red-600 to-orange-400 shadow-lg shadow-red-500/20">
+
                         <span className="text-3xl">
                             🇮🇩
                         </span>
+
                     </div>
 
 
@@ -77,10 +96,13 @@ export default function TWK() {
 
                     {/* Title */}
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight mt-2">
+
                         Pilih Tema
+
                         <span className="bg-linear-to-r from-red-400 via-orange-400 to-yellow-300 bg-clip-text text-transparent">
                             {' '}TWK
                         </span>
+
                     </h1>
 
 
@@ -96,29 +118,69 @@ export default function TWK() {
                     <div className="flex flex-wrap gap-3 mt-6">
 
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-slate-300">
+
                             <BookOpen
                                 size={16}
                                 className="text-red-400"
                             />
+
                             8 Tema Pembelajaran
+
                         </div>
 
+
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm text-slate-300">
+
                             <FileQuestion
                                 size={16}
                                 className="text-orange-400"
                             />
+
                             Materi & Latihan Soal
+
                         </div>
 
                     </div>
+
+
+                    {/* ================= TEST TWK BUTTON ================= */}
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            y: 15,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            delay: 0.3,
+                        }}
+                        className="mt-7"
+                    >
+
+                        <Link
+                            to="/test-twk"
+                            className="inline-flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-linear-to-r from-red-600 via-orange-500 to-yellow-400 hover:from-red-500 hover:via-orange-400 hover:to-yellow-300 font-bold shadow-xl shadow-red-500/20 hover:scale-[1.03] transition-all duration-300"
+                        >
+
+                            <Trophy size={20} />
+
+                            <span>
+                                Test TWK
+                            </span>
+
+                            <ArrowRight size={19} />
+
+                        </Link>
+
+                    </motion.div>
 
                 </motion.div>
 
 
                 {/* ================= THEME GRID ================= */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-
 
                     {twkThemes.map((theme, index) => {
 
@@ -151,14 +213,12 @@ export default function TWK() {
                                 className="group relative flex flex-col rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl overflow-hidden hover:border-red-400/30 transition-colors duration-300"
                             >
 
-
                                 {/* Top Gradient */}
                                 <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-red-600 via-orange-500 to-yellow-400" />
 
 
                                 {/* Card Content */}
                                 <div className="p-5 flex flex-col flex-1">
-
 
                                     {/* Icon + Number */}
                                     <div className="flex items-center justify-between">
@@ -200,7 +260,6 @@ export default function TWK() {
                                     {/* Buttons */}
                                     <div className="grid grid-cols-2 gap-3 mt-7">
 
-
                                         {/* MATERI */}
                                         <Link
                                             to={`/materi/${theme.id}`}
@@ -219,7 +278,7 @@ export default function TWK() {
                                         </Link>
 
 
-                                        {/* TEST */}
+                                        {/* TEST PER TEMA */}
                                         <Link
                                             to={`/test/${theme.id}`}
                                             className="group/button flex items-center justify-center gap-2 rounded-xl bg-linear-to-r from-red-600 to-orange-500 hover:from-red-500 hover:to-orange-400 py-3 text-sm font-semibold shadow-lg shadow-red-500/10 transition-all"
