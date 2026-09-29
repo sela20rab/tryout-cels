@@ -8,61 +8,31 @@ $app = new Illuminate\Foundation\Application(
 |--------------------------------------------------------------------------
 | Vercel Serverless Environment
 |--------------------------------------------------------------------------
+|
+| Vercel hanya mengizinkan penulisan ke direktori /tmp.
+| Kita pindahkan storage Laravel ke /tmp/storage.
+|
 */
 
-if (
-    isset($_ENV['VERCEL']) ||
-    isset($_SERVER['VERCEL'])
-) {
-    /*
-    |--------------------------------------------------------------------------
-    | Writable paths for Vercel
-    |--------------------------------------------------------------------------
-    */
+if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
 
-    $storagePath = '/tmp/storage';
-    $bootstrapPath = '/tmp/bootstrap';
-    $bootstrapCachePath = '/tmp/bootstrap/cache';
-
-    /*
-    |--------------------------------------------------------------------------
-    | Laravel Storage
-    |--------------------------------------------------------------------------
-    */
-
-    $app->useStoragePath($storagePath);
-
-    /*
-    |--------------------------------------------------------------------------
-    | Laravel Bootstrap
-    |--------------------------------------------------------------------------
-    */
-
-    $app->useBootstrapPath($bootstrapPath);
-
-    /*
-    |--------------------------------------------------------------------------
-    | Create writable directories
-    |--------------------------------------------------------------------------
-    */
+    $app->useStoragePath('/tmp/storage');
 
     $directories = [
-        $storagePath,
-        $storagePath . '/app',
-        $storagePath . '/framework',
-        $storagePath . '/framework/cache',
-        $storagePath . '/framework/cache/data',
-        $storagePath . '/framework/sessions',
-        $storagePath . '/framework/testing',
-        $storagePath . '/framework/views',
-        $storagePath . '/logs',
-
-        $bootstrapPath,
-        $bootstrapCachePath,
+        '/tmp/storage',
+        '/tmp/storage/app',
+        '/tmp/storage/framework',
+        '/tmp/storage/framework/cache',
+        '/tmp/storage/framework/cache/data',
+        '/tmp/storage/framework/sessions',
+        '/tmp/storage/framework/testing',
+        '/tmp/storage/framework/views',
+        '/tmp/storage/logs',
+        '/tmp/views',
     ];
 
     foreach ($directories as $directory) {
-        if (! is_dir($directory)) {
+        if (!is_dir($directory)) {
             @mkdir($directory, 0777, true);
         }
     }
