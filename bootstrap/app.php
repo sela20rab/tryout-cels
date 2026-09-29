@@ -4,21 +4,11 @@ $app = new Illuminate\Foundation\Application(
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 
-/*
-|--------------------------------------------------------------------------
-| Vercel Serverless Environment
-|--------------------------------------------------------------------------
-|
-| Vercel hanya mengizinkan penulisan ke direktori /tmp.
-| Kita pindahkan storage Laravel ke /tmp/storage.
-|
-*/
-
 if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
 
     $app->useStoragePath('/tmp/storage');
 
-    $directories = [
+    foreach ([
         '/tmp/storage',
         '/tmp/storage/app',
         '/tmp/storage/framework',
@@ -29,20 +19,12 @@ if (isset($_ENV['VERCEL']) || isset($_SERVER['VERCEL'])) {
         '/tmp/storage/framework/views',
         '/tmp/storage/logs',
         '/tmp/views',
-    ];
-
-    foreach ($directories as $directory) {
-        if (!is_dir($directory)) {
-            @mkdir($directory, 0777, true);
+    ] as $dir) {
+        if (!is_dir($dir)) {
+            @mkdir($dir, 0777, true);
         }
     }
 }
-
-/*
-|--------------------------------------------------------------------------
-| Bind Important Interfaces
-|--------------------------------------------------------------------------
-*/
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
